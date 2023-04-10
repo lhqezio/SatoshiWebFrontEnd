@@ -1,0 +1,689 @@
+@import "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans";
+
+@import "https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#irys {
+  text-align: center;
+  width: 740px;
+  height: 182px;
+  margin: -91px 0 0 -370px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.qnaBox {
+  margin: 20px 5%;
+  max-width: 65%;
+}
+
+#logo {
+  width: 110px;
+}
+
+#logo-anchor {
+  flex: 2;
+  display: inline-flex;
+  justify-content: center;
+}
+#logo-anchor a {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+#darkLight {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  width: 40px;
+  height: 40px;
+  border-radius: 99999px;
+  transition: 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#button {
+  display: none;
+  font-size: xxx-large;
+  margin-right: 15px;
+}
+
+.btn {
+  border-radius: 7px;
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 24px 76px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 20px;
+}
+
+nav {
+  flex: 8;
+}
+
+.navbar {
+  display: flex;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.subnav {
+  display: block;
+  padding: 0;
+}
+
+.navbar-wrapper {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  z-index: 10000;
+}
+
+.nav-item {
+  flex: 2;
+  position: relative;
+}
+
+.navbar,
+.subnav {
+  list-style: none;
+  font-size: 90%;
+}
+
+.nav-item a,
+.subnav-item a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+}
+
+.subnav {
+  width: 100%;
+  position: absolute;
+  top: 47px;
+  opacity: 0;
+  z-index: 10000;
+  pointer-events: none;
+  transition: 0.4s;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item.with-sub:hover .subnav {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.subnav-item {
+  font-size: 110%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.productHeaderNavItem {
+  text-decoration: none;
+  color: #000;
+}
+
+.productHeaderNavItem:hover {
+  color: #0F4C75;
+}
+
+.irys {
+  margin: 300px;
+  text-align: center;
+}
+
+#website-tree {
+  display: flex;
+  justify-content: center;
+}
+
+#right-section {
+  padding-right: 20vw;
+}
+
+#left-section {
+  padding-left: 20vw;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  font-family: "Times New Roman", serif;
+  font-style: normal;
+  font-size: 1em;
+  font-weight: 300 !important;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 20px;
+}
+.footerLink {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.footerLink:hover {
+  color: #D4F1F4;
+}
+#supportBtn{
+  text-align: center;
+}
+
+#slogan {
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#slideshow-wrapper {
+  position: relative;
+  max-width: 740px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.slideshowPicture {
+  position: relative;
+  max-width: 100%;
+  border-radius: 7px;
+}
+
+.pictureProduct {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%, -50%);
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #FFF;
+  font-size: 1.3em;
+}
+
+.buyNow {
+  display: block;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #FFF;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  background-color: #1ba3f7;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.slideshowButton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  cursor: pointer;
+  color: #FFF;
+  transition: 0.2s;
+}
+
+.slideshowButton:hover {
+  font-size: xx-large;
+}
+
+#prevButton {
+  top: 50%;
+  left: 5%;
+}
+
+#nextButton {
+  top: 50%;
+  right: 5%;
+}
+
+#pic2,
+#pic3,
+#pic4 {
+  display: none;
+}
+
+#quotaionSection {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+}
+
+#quotation {
+  font-size: 1.3em;
+}
+
+#quotationAuthor {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.productDetails {
+  max-width: 740px;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#aboutusText {
+  font-size: 1.3em;
+}
+#aboutusHead {
+  text-align: center;
+  font-size: 500%;
+}
+
+.productArticles {
+  border-radius: 7px;
+  padding: 13px;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin-bottom: 50px;
+}
+.qnaText {
+  margin: 20px;
+}
+#nextVideo {
+  position:static;
+  right: 0;
+  bottom: 0;
+  max-width: 100%; 
+  max-height: 100%;
+}
+#nextContent {
+  position: fixed;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+#siteCred {
+  font-size: 0.7em;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+
+.picture {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+#pic3 .pictureProduct {
+  color: #000;
+}
+
+.pictureProduct {
+  font-weight: 700;
+}
+
+.productHeaderNav {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.productHeaderNav li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.productHeaderNavItem {
+  padding: 1em;
+  cursor: pointer;
+}
+
+.productImageHeader {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  max-width: 740px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.productHeader {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 7px;
+  margin-top: 5px;
+  position: sticky;
+  top: 4px;
+  transform: translate(27%, 2%);
+  z-index: 9999;
+}
+
+.productHeader h1 {
+  vertical-align: middle;
+}
+
+.productHeaderLogo {
+  width: 60px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.productHeaderOption {
+  display: flex;
+  padding: 5px;
+}
+
+.productCatchPhrase {
+  text-align: center;
+  font-size: xxx-large;
+}
+
+.productLogoName {
+  display: flex;
+  justify-content: center;
+}
+
+#emmaLogoName {
+  margin-left: 5px;
+}
+
+.sysrequires {
+  display: flex;
+}
+
+.sysrequiresItem {
+  padding: 5px;
+}
+
+.productDetailsHeader.sysrequiresHeader {
+  text-align: center;
+}
+
+.productNameNav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 5px;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#orderButton {
+  border-radius: 40px;
+  border: 2px solid #000;
+  color: #000;
+  transition: 0.3s;
+  display: block;
+}
+
+#orderButton:hover {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: #1ba3f7;
+  color: #fff;
+}
+
+#orderBack {
+  display: none;
+  opacity: 0.89;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+#orderFormWrap {
+  width: 700px;
+  height: 450px;
+  margin: -225px 0 0 -350px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 7px;
+  z-index: 9999999;
+  display: none;
+  transition: 0.3s;
+}
+
+#orderTable {
+  width: 30%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+#orderTable th {
+  font-size: 1.7em;
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+#orderTable td {
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+#orderTable input,
+#OrderTable select {
+  width: 200px;
+  box-sizing: border-box;
+}
+
+#totalTable {
+  width: 30%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+#totalTable td {
+  font-size: 1.5em;
+}
+
+#totalTable tr td:nth-child(1) {
+  font-weight: 900;
+  font-size: 1.5em;
+  text-align: right;
+}
+#taxTable {
+  width: 30%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+#taxTable tr td:nth-child(1) {
+  text-align: right;
+}
+
+#submit-form {
+  display: none;
+}
+
+#submitLabelWrap {
+  text-align: center;
+  margin: 30px;
+}
+
+#submitLabel {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submitLabel:hover {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: #1ba3f7;
+  color: #fff;
+}
+
+#orderFormQuit {
+  position: absolute;
+  top: 5px;
+  right: 1vw;
+}
+
+#orderFormQuit button {
+  width: 15px;
+  height: 15px;
+  margin-right: 0;
+  border-radius: 10000px;
+  font-size: 0.6em;
+  transition: 0.3s;
+}
+
+#orderFormQuit button:hover {
+  background-color: #ff5560;
+  color: #9a0100;
+  border: none;
+}
+.supportTable {
+  margin-left:auto;
+  margin-right:auto;
+  width:65%;
+}
+.supportTable tr td:nth-child(2) {
+  padding-left:10px;
+}
+.qnaText {
+  text-align:center;
+  font-weight:700;
+  font-size:1.5em;
+}
+@media screen and (max-width: 1086px) {
+  #logo {
+    width: 90px;
+  }
+
+  header {
+    font-size: 100;
+  }
+
+  .navbar-wrapper {
+    position: relative;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  nav {
+    opacity: 0;
+    pointer-events: none;
+    top: 74px;
+    position: absolute;
+    width: 100%;
+    background-color: #FFF;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: auto;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  #logo-anchor {
+    margin-right: -62.366px;
+  }
+
+  #logo {
+    padding: 10px;
+  }
+
+  .nav-item.with-sub:hover .subnav {
+    opacity: 0;
+    pointer-events: all;
+  }
+
+  .subnav {
+    position: relative;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .nav-item {
+    display: block;
+    text-align: center;
+    border-top: 0.1px solid lightgray;
+  }
+
+  .nav-item a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .nav-item.with-sub:hover .subnav {
+    display: block;
+    opacity: 1;
+  }
+
+  #button {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px;
+  }
+
+  .productHeader {
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 0;
+    top: 0;
+    transform: none;
+  }
+  #buttonOverview,
+  #buttonSysreq,
+  #buttonTechnologies {
+    display: none;
+  }
+}
